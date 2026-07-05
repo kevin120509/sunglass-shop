@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convenios y Pagos - SUNGLASS SHOP</title>
+    <meta name="description" content="Facilidades de pago, Meses Sin Intereses y convenios corporativos para empresas en Sunglass Shop.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-convenios">
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SUNGLASS<span>SHOP</span></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="experiencia.html" class="nav-link">La Experiencia</a>
+                <a href="marcas.html" class="nav-link">Marcas & Calidad</a>
+                <a href="salud-visual.html" class="nav-link">Salud Visual</a>
+                <a href="beneficios.html" class="nav-link">Beneficios</a>
+                <a href="convenios.html" class="nav-link active">Convenios</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://wa.me/525512345678" target="_blank" class="btn btn-outline-gold"><i class="fa-brands fa-whatsapp"></i> Agendar Cita Presencial</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="convenios-hero" style="padding: 120px 0 60px; background: var(--primary-dark); color: white; text-align: center;">
+        <div class="container animate-on-scroll fade-in-up">
+            <span class="section-badge" style="border-color: rgba(255,255,255,0.3);">ALIANZAS ESTRATÉGICAS</span>
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">Convenios Corporativos</h1>
+            <p style="font-size: 1.2rem; color: #ddd; max-width: 600px; margin: 0 auto;">Ofrecemos programas integrales de salud visual para empresas, instituciones y aseguradoras con beneficios exclusivos vía nómina o descuentos directos.</p>
+        </div>
+    </section>
+
+    <section class="convenios-content" style="padding: 80px 0; background: var(--bg-light);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="convenio-card animate-on-scroll fade-in-up" style="background: white; padding: 50px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); text-align: center; border: 2px solid var(--primary-gold);">
+                    <!-- We use an icon here or you can replace it with the CFE logo later -->
+                    <div style="width: 100px; height: 100px; background: #008751; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto 20px; font-weight: bold; font-family: Arial, sans-serif;">
+                        CFE
+                    </div>
+                    <h3 style="color: var(--primary-dark); font-size: 2rem; margin-bottom: 20px;">Afiliados Oficiales a CFE</h3>
+                    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">
+                        Somos proveedores autorizados para los trabajadores de la <strong>Comisión Federal de Electricidad</strong>. Si laboras en CFE, puedes adquirir tus armazones y micas de alta gama utilizando tus beneficios y descuentos directos por convenio institucional.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                        <span style="background: var(--bg-light); padding: 10px 20px; border-radius: var(--radius-full); color: var(--primary-dark); font-weight: 500;"><i class="fa-solid fa-check text-gold"></i> Trámite Ágil</span>
+                        <span style="background: var(--bg-light); padding: 10px 20px; border-radius: var(--radius-full); color: var(--primary-dark); font-weight: 500;"><i class="fa-solid fa-check text-gold"></i> Descuento Especial</span>
+                        <span style="background: var(--bg-light); padding: 10px 20px; border-radius: var(--radius-full); color: var(--primary-dark); font-weight: 500;"><i class="fa-solid fa-check text-gold"></i> Asesoría Clínica</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Contact Form for Companies -->
+    <section class="contact-form-section" style="padding: 80px 0; background: white;">
+        <div class="container animate-on-scroll fade-in-up">
+            <div style="max-width: 600px; margin: 0 auto; background: var(--bg-light); padding: 50px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                <div class="text-center" style="margin-bottom: 30px;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 3rem; color: #25D366; margin-bottom: 15px;"></i>
+                    <h2 style="color: var(--primary-dark); font-size: 2rem;">¿Quieres afiliar a tu empresa?</h2>
+                    <p style="color: var(--text-light);">Déjanos tus datos y te contactaremos por WhatsApp con una propuesta a medida.</p>
+                </div>
+                
+                <form id="empresaForm" onsubmit="sendWhatsApp(event)">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--primary-dark); font-weight: 500;">Nombre de la Empresa</label>
+                        <input type="text" id="empresaName" required style="width: 100%; padding: 12px 15px; border: 1px solid #ccc; border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--primary-dark); font-weight: 500;">Tu Nombre y Cargo</label>
+                        <input type="text" id="empresaContact" required style="width: 100%; padding: 12px 15px; border: 1px solid #ccc; border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--primary-dark); font-weight: 500;">Número de Empleados Aprox.</label>
+                        <select id="empresaSize" style="width: 100%; padding: 12px 15px; border: 1px solid #ccc; border-radius: var(--radius-md); font-size: 1rem; font-family: inherit;">
+                            <option>1 - 50</option>
+                            <option>51 - 200</option>
+                            <option>201 - 500</option>
+                            <option>Más de 500</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary-gold" style="width: 100%; padding: 15px; font-size: 1.1rem; border-radius: var(--radius-md); cursor: pointer; border: none; font-weight: 600;"><i class="fa-brands fa-whatsapp"></i> Enviar Mensaje a Sunglass Shop</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function sendWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('empresaName').value;
+            const contact = document.getElementById('empresaContact').value;
+            const size = document.getElementById('empresaSize').value;
+            
+            const message = encodeURIComponent(`Hola, represento a la empresa *${name}*. Soy ${contact} y nos gustaría conocer los beneficios corporativos de Sunglass Shop para nuestros ${size} empleados.`);
+            window.open(`https://wa.me/525512345678?text=${message}`, '_blank');
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo text-white">SUNGLASS<span>SHOP</span></a>
+                <p>Autoridad, calidad y asesoría experta en salud visual. Más de 11 años de experiencia.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Menú</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="experiencia.html">La Experiencia</a></li>
+                    <li><a href="marcas.html">Marcas</a></li>
+                    <li><a href="salud-visual.html">Salud Visual</a></li>
+                    <li><a href="beneficios.html">Beneficios</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Clínica principal, Plaza Dorada, Mérida, Yuc.</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +52 55 1234 5678</p>
+                <p><i class="fa-solid fa-envelope"></i> asesoria@sunglassshop.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 SUNGLASS SHOP. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/525512345678" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>

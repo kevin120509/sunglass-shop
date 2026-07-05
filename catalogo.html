@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Armazón - SUNGLASS SHOP</title>
+    <meta name="description" content="Detalles de nuestro armazón exclusivo.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-catalogo" style="background: var(--bg-white);">
+    <!-- Navbar -->
+    <header class="navbar" style="border-bottom: 1px solid #eee;">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SUNGLASS<span>SHOP</span></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="experiencia.html" class="nav-link">La Experiencia</a>
+                <a href="marcas.html" class="nav-link active">Marcas & Calidad</a>
+                <a href="salud-visual.html" class="nav-link">Salud Visual</a>
+                <a href="beneficios.html" class="nav-link">Beneficios</a>
+                <a href="convenios.html" class="nav-link">Convenios</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://wa.me/525512345678" target="_blank" class="btn btn-outline-gold"><i class="fa-brands fa-whatsapp"></i> Agendar Cita Presencial</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section (Ben & Frank Style) -->
+    <div class="container" style="padding: 120px 0 60px;">
+        <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: start;">
+            
+            <!-- Left Column: Product Images & Info (Scrolls) -->
+            <div class="product-left-col">
+                <div class="product-image-showcase animate-on-scroll fade-in-up" style="background: var(--bg-light); border-radius: var(--radius-lg); padding: 50px; text-align: center; margin-bottom: 40px;">
+                    <!-- ID ADDED HERE -->
+                    <img id="product-main-img" src="C:/Users/kevin/.gemini/antigravity-ide/brain/cd214bb8-714c-4209-bc40-f61dbd63ad22/glasses_model_1_1783196458318.png" alt="Armazón Frontal" style="width: 100%; max-width: 600px; border-radius: var(--radius-md);">
+                </div>
+
+                <div class="product-description animate-on-scroll fade-in-up" style="padding: 30px 0; border-top: 1px solid #eee;">
+                    <h3 style="font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 20px;">Acerca del armazón</h3>
+                    <p id="desc-1" style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">Este modelo es el resultado de fusionar la resistencia industrial con la ligereza extrema. Fabricado a mano, este armazón ofrece una durabilidad superior sin comprometer la comodidad.</p>
+                    <p id="desc-2" style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8;">Su diseño geométrico y elegante es perfecto para rostros ovalados y redondos, proporcionando una estructura que destaca tu mirada con autoridad.</p>
+                </div>
+
+                <div class="product-specs animate-on-scroll fade-in-up" style="padding: 30px 0; border-top: 1px solid #eee;">
+                    <h3 style="font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 20px;">Detalles Técnicos</h3>
+                    <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <li style="background: var(--bg-light); padding: 15px; border-radius: var(--radius-sm);"><strong style="color: var(--primary-dark); display: block; font-size: 0.9rem;">Material</strong> <span id="spec-material" style="color: var(--text-light);">Premium 100% Hipoalergénico</span></li>
+                        <li style="background: var(--bg-light); padding: 15px; border-radius: var(--radius-sm);"><strong style="color: var(--primary-dark); display: block; font-size: 0.9rem;">Peso</strong> <span id="spec-peso" style="color: var(--text-light);">Ultra ligero</span></li>
+                        <li style="background: var(--bg-light); padding: 15px; border-radius: var(--radius-sm);"><strong style="color: var(--primary-dark); display: block; font-size: 0.9rem;">Ancho del lente</strong> <span id="spec-ancho" style="color: var(--text-light);">52 mm</span></li>
+                        <li style="background: var(--bg-light); padding: 15px; border-radius: var(--radius-sm);"><strong style="color: var(--primary-dark); display: block; font-size: 0.9rem;">Puente</strong> <span id="spec-puente" style="color: var(--text-light);">18 mm</span></li>
+                        <li style="background: var(--bg-light); padding: 15px; border-radius: var(--radius-sm);"><strong style="color: var(--primary-dark); display: block; font-size: 0.9rem;">Varillas</strong> <span id="spec-varillas" style="color: var(--text-light);">145 mm (Ajustables)</span></li>
+                        <li style="background: var(--bg-light); padding: 15px; border-radius: var(--radius-sm);"><strong style="color: var(--primary-dark); display: block; font-size: 0.9rem;">Bisagras</strong> <span id="spec-bisagras" style="color: var(--text-light);">Flexibles de resorte</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column: Sticky Info Panel -->
+            <div class="product-right-col" style="position: sticky; top: 120px;">
+                <div style="background: white; padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+                        <div>
+                            <span style="color: var(--primary-gold); font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 600;">Línea Exclusiva</span>
+                            <!-- ID ADDED HERE -->
+                            <h1 id="product-title" style="font-size: 2.8rem; color: var(--primary-dark); margin: 5px 0;">Armazón Premium</h1>
+                        </div>
+                    </div>
+
+                    <p style="color: var(--text-light); font-size: 1rem; margin-bottom: 30px;">Incluye micas de policarbonato con antirreflejante premium y estuche rígido de lujo.</p>
+
+                    <div class="color-selector" style="margin-bottom: 30px;">
+                        <label style="display: block; font-weight: 600; color: var(--primary-dark); margin-bottom: 10px;">Color: <span id="color-name" style="color: var(--text-light); font-weight: 400;">Negro Mate / Dorado</span></label>
+                        <div style="display: flex; gap: 15px;">
+                            <div class="color-swatch active" style="width: 35px; height: 35px; border-radius: 50%; background: linear-gradient(135deg, #222 50%, #d4af37 50%); cursor: pointer; border: 2px solid var(--primary-gold); box-shadow: 0 0 0 2px white, 0 0 0 3px var(--primary-gold);"></div>
+                            <div class="color-swatch" style="width: 35px; height: 35px; border-radius: 50%; background: #444; cursor: pointer; border: 2px solid transparent;"></div>
+                            <div class="color-swatch" style="width: 35px; height: 35px; border-radius: 50%; background: #8B4513; cursor: pointer; border: 2px solid transparent;"></div>
+                        </div>
+                    </div>
+
+                    <!-- ID ADDED HERE -->
+                    <a id="btn-comprar" href="https://wa.me/525512345678?text=Hola,%20me%20interesa%20agendar%20una%20cita%20presencial%20para%20probarme%20el%20armaz%C3%B3n." target="_blank" class="btn btn-primary-gold" style="width: 100%; text-align: center; padding: 15px; font-size: 1.1rem; display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 20px;">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i> Agendar Cita Presencial
+                    </a>
+
+                    <!-- Physical Store Hook -->
+                    <div style="background: linear-gradient(135deg, var(--primary-dark), #1a1a1a); padding: 25px; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--primary-gold);">
+                        <i class="fa-solid fa-user-doctor" style="color: var(--primary-gold); font-size: 2rem; margin-bottom: 15px;"></i>
+                        <h4 style="color: white; font-size: 1.2rem; margin-bottom: 10px;">Enamórate del diseño en persona</h4>
+                        <p style="color: #ccc; font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6;">Ven a nuestra sucursal. Te realizaremos un <strong>examen visual clínico completo</strong> y nuestros asesores te mostrarán este y cientos de armazones más para encontrar el estilo perfecto para tu rostro.</p>
+                        <!-- ID ADDED HERE -->
+                        <a id="btn-hook" href="https://wa.me/525512345678?text=Hola,%20quiero%20visitar%20la%20sucursal%20para%20un%20examen%20visual%20y%20ver%20sus%20modelos%20de%20armazones." target="_blank" class="btn btn-outline-gold" style="width: 100%; font-size: 0.9rem; padding: 12px;">Agendar Visita y Examen Visual</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recommendations -->
+    <section class="recommendations" style="padding: 80px 0; background: white; border-top: 1px solid #eee;">
+        <div class="container animate-on-scroll fade-in-up">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 40px; text-align: center;">También te podría gustar</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <!-- Rec 1 -->
+                <a href="catalogo.html?modelo=Milo%20TR90&img=glasses_model_2_1783196465401.png" style="display: block; text-decoration: none; text-align: center;">
+                    <div style="background: var(--bg-light); border-radius: var(--radius-md); padding: 30px; margin-bottom: 15px;">
+                        <img src="C:/Users/kevin/.gemini/antigravity-ide/brain/cd214bb8-714c-4209-bc40-f61dbd63ad22/glasses_model_2_1783196465401.png" style="width: 100%; object-fit: contain; height: 80px;">
+                    </div>
+                    <h4 style="color: var(--primary-dark); font-size: 1.2rem; margin-bottom: 5px;">Milo TR90</h4>
+                </a>
+                <!-- Rec 2 -->
+                <a href="catalogo.html?modelo=Aura%20Acetato&img=glasses_model_3_1783196472344.png" style="display: block; text-decoration: none; text-align: center;">
+                    <div style="background: var(--bg-light); border-radius: var(--radius-md); padding: 30px; margin-bottom: 15px;">
+                        <img src="C:/Users/kevin/.gemini/antigravity-ide/brain/cd214bb8-714c-4209-bc40-f61dbd63ad22/glasses_model_3_1783196472344.png" style="width: 100%; object-fit: contain; height: 80px;">
+                    </div>
+                    <h4 style="color: var(--primary-dark); font-size: 1.2rem; margin-bottom: 5px;">Aura Acetato</h4>
+                </a>
+                <!-- Rec 3 -->
+                <a href="catalogo.html?modelo=Zen%20Titanio&img=glasses_model_4_1783196479219.png" style="display: block; text-decoration: none; text-align: center;">
+                    <div style="background: var(--bg-light); border-radius: var(--radius-md); padding: 30px; margin-bottom: 15px;">
+                        <img src="C:/Users/kevin/.gemini/antigravity-ide/brain/cd214bb8-714c-4209-bc40-f61dbd63ad22/glasses_model_4_1783196479219.png" style="width: 100%; object-fit: contain; height: 80px;">
+                    </div>
+                    <h4 style="color: var(--primary-dark); font-size: 1.2rem; margin-bottom: 5px;">Zen Titanio</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo text-white">SUNGLASS<span>SHOP</span></a>
+                <p>Autoridad, calidad y asesoría experta en salud visual. Más de 11 años de experiencia.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Menú</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="experiencia.html">La Experiencia</a></li>
+                    <li><a href="marcas.html">Marcas</a></li>
+                    <li><a href="salud-visual.html">Salud Visual</a></li>
+                    <li><a href="beneficios.html">Beneficios</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Clínica principal, Plaza Dorada, Mérida, Yuc.</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +52 55 1234 5678</p>
+                <p><i class="fa-solid fa-envelope"></i> asesoria@sunglassshop.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 SUNGLASS SHOP. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/525512345678" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+    <script src="script.js"></script>
+    <script>
+        // Database of products
+        const productsData = {
+            "Dafna Titan": {
+                desc1: "El Dafna Titan es el resultado de fusionar la resistencia industrial con la ligereza extrema. Fabricado a mano con titanio aeroespacial, ofrece una durabilidad superior sin comprometer la comodidad.",
+                desc2: "Su diseño geométrico y elegante es perfecto para rostros ovalados y redondos, proporcionando una estructura que destaca tu mirada con autoridad.",
+                material: "Titanio 100% Hipoalergénico",
+                peso: "12 gramos (Ultra ligero)",
+                ancho: "52 mm",
+                puente: "18 mm",
+                varillas: "145 mm",
+                bisagras: "Flexibles de resorte"
+            },
+            "Milo Classic": {
+                desc1: "Un diseño atemporal fabricado con acetato italiano de primera calidad. El Milo Classic destaca por su acabado mate que proporciona un look sofisticado e intelectual.",
+                desc2: "Ideal para todo tipo de rostros, su puente anatómico reparte el peso de manera uniforme, lo que te permite usarlo todo el día sin marcas.",
+                material: "Acetato Italiano Mate",
+                peso: "22 gramos",
+                ancho: "50 mm",
+                puente: "20 mm",
+                varillas: "140 mm",
+                bisagras: "5 barriles de acero macizo"
+            },
+            "Aura Lite": {
+                desc1: "Diseñado para los que buscan la máxima comodidad. El Aura Lite está inyectado en TR90, un polímero con memoria de forma que puede doblarse sin romperse.",
+                desc2: "Su estética transparente y ligera aporta un toque moderno a cualquier atuendo, siendo el acompañante perfecto para tu rutina diaria.",
+                material: "TR90 Memoria de Forma",
+                peso: "14 gramos",
+                ancho: "54 mm",
+                puente: "17 mm",
+                varillas: "142 mm",
+                bisagras: "Sin tornillos (Integradas)"
+            },
+            "Zen Pro": {
+                desc1: "La armonía perfecta entre materiales clásicos y modernos. El Zen Pro combina un frente de acetato elegante con varillas metálicas estilizadas para un look ejecutivo inigualable.",
+                desc2: "Sus almohadillas nasales de silicón antideslizante aseguran un agarre perfecto, incluso en los días más dinámicos.",
+                material: "Mixto (Acetato/Metal)",
+                peso: "18 gramos",
+                ancho: "53 mm",
+                puente: "19 mm",
+                varillas: "145 mm",
+                bisagras: "Resorte Alemán de alta tensión"
+            },
+            "Oslo Vintage": {
+                desc1: "Inspirado en la cultura pop de los 70s, este armazón redondo es un clásico reinventado. Su aro delgado y puente curvo ofrecen un perfil intelectual.",
+                desc2: "Perfecto para caras cuadradas y angulares, suavizando las facciones con sus curvas sutiles.",
+                material: "Acero Inoxidable Premium",
+                peso: "16 gramos",
+                ancho: "49 mm",
+                puente: "21 mm",
+                varillas: "140 mm",
+                bisagras: "Barril clásico"
+            },
+            "Vanguard": {
+                desc1: "Para los que no tienen miedo de destacar. El Vanguard presenta un perfil oversize con ángulos geométricos pronunciados, todo esculpido en una sola pieza de acetato macizo.",
+                desc2: "Es la definición de 'gafas de poder'. Un marco que captura la atención inmediatamente al entrar a una habitación.",
+                material: "Acetato Celulósico Grueso",
+                peso: "28 gramos",
+                ancho: "56 mm",
+                puente: "16 mm",
+                varillas: "150 mm",
+                bisagras: "Reforzadas 7 barriles"
+            }
+        };
+
+        // Dynamic Product Page Loader
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const modelo = urlParams.get('modelo');
+            const imgName = urlParams.get('img');
+
+            if (modelo) {
+                // Update Title
+                document.getElementById('product-title').textContent = modelo;
+                document.title = modelo + " - SUNGLASS SHOP";
+                
+                // Fetch data for this specific model
+                const product = productsData[modelo];
+                if (product) {
+                    document.getElementById('desc-1').textContent = product.desc1;
+                    document.getElementById('desc-2').textContent = product.desc2;
+                    document.getElementById('spec-material').textContent = product.material;
+                    document.getElementById('spec-peso').textContent = product.peso;
+                    document.getElementById('spec-ancho').textContent = product.ancho;
+                    document.getElementById('spec-puente').textContent = product.puente;
+                    document.getElementById('spec-varillas').textContent = product.varillas;
+                    document.getElementById('spec-bisagras').textContent = product.bisagras;
+                }
+                
+                // Update WhatsApp Links with specific model
+                const whatsappBaseUrl = "https://wa.me/525512345678?text=";
+                const msgCita = encodeURIComponent(`Hola, me interesa agendar una cita presencial para probarme el armazón ${modelo}.`);
+                const msgVisita = encodeURIComponent(`Hola, quiero visitar la sucursal para un examen visual y ver el armazón ${modelo} y otros modelos.`);
+                
+                document.getElementById('btn-comprar').href = whatsappBaseUrl + msgCita;
+                document.getElementById('btn-hook').href = whatsappBaseUrl + msgVisita;
+            }
+
+            if (imgName) {
+                // Update Image
+                // We use the absolute path prefix that matches the project structure
+                const basePath = "C:/Users/kevin/.gemini/antigravity-ide/brain/cd214bb8-714c-4209-bc40-f61dbd63ad22/";
+                document.getElementById('product-main-img').src = basePath + imgName;
+            }
+
+            // Simple Color Swatch Logic for the new Layout
+            document.querySelectorAll('.color-swatch').forEach(swatch => {
+                swatch.addEventListener('click', function() {
+                    document.querySelectorAll('.color-swatch').forEach(s => {
+                        s.style.boxShadow = 'none';
+                        s.style.border = '2px solid transparent';
+                    });
+                    this.style.boxShadow = '0 0 0 2px white, 0 0 0 3px var(--primary-gold)';
+                    this.style.border = '2px solid var(--primary-gold)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
