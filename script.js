@@ -56,10 +56,10 @@ if (marca && document.getElementById('catalogBrandName')) {
     
     let productsHTML = '';
     const images = [
-        'C:/Users/kevin/.gemini/antigravity-ide/brain/cd214bb8-714c-4209-bc40-f61dbd63ad22/glasses_model_1_1783196458318.png',
-        'C:/Users/kevin/.gemini/antigravity-ide/brain/cd214bb8-714c-4209-bc40-f61dbd63ad22/glasses_model_2_1783196465401.png',
-        'C:/Users/kevin/.gemini/antigravity-ide/brain/cd214bb8-714c-4209-bc40-f61dbd63ad22/glasses_model_3_1783196472344.png',
-        'C:/Users/kevin/.gemini/antigravity-ide/brain/cd214bb8-714c-4209-bc40-f61dbd63ad22/glasses_model_4_1783196479219.png'
+        'images/glasses_model_1_1783196458318.png',
+        'images/glasses_model_2_1783196465401.png',
+        'images/glasses_model_3_1783196472344.png',
+        'images/glasses_model_4_1783196479219.png'
     ];
     const styles = ['Clásico', 'Moderno', 'Aviador', 'Cuadrado', 'Redondo', 'Minimalista'];
     
