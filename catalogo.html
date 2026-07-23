@@ -16,7 +16,7 @@
     <header class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/image.png" alt="SUNGLASS SHOP" class="logo-img">
+                <img src="assets/logo_sunglasses.svg" alt="SUNGLASS SHOP" class="logo-img">
             </a>
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Inicio</a>
@@ -32,172 +32,419 @@
         </div>
     </header>
 
-    <!-- Page Header with Video Background -->
-    <div class="page-header" style="position: relative; min-height: 65vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; overflow: hidden; background-color: #000; padding: 120px 0;">
-        <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 1; transform: translate(-50%, -50%); opacity: 0.45; object-fit: cover;">
+    <!-- Catalog Hero Section -->
+    <div class="catalog-hero" id="hero-showroom">
+        <video autoplay muted loop playsinline class="catalog-hero-video">
             <source src="assets/imagenes_catalogo/RayBan/RayBanVid1.mp4" type="video/mp4">
         </video>
-        <div class="overlay-gradient-dark" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; background: rgba(0,0,0,0.5);"></div>
+        <div class="catalog-hero-overlay"></div>
         
-        <div class="container" style="position: relative; z-index: 3;">
+        <div class="catalog-hero-content">
             <span class="section-badge" style="color: #ffffff; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.1);">CATÁLOGO EXCLUSIVO</span>
             <h1 style="font-size: 3.5rem; margin-top: 15px; text-transform: uppercase; letter-spacing: 2px;">Colección Ray-Ban</h1>
-            <p style="max-width: 700px; margin: 15px auto 0; font-size: 1.2rem; color: #ddd; font-weight: 300;">Diseños icónicos y armazones de alta resistencia. Explora los modelos disponibles en nuestra sucursal de Mérida y agenda tu prueba presencial.</p>
+            <p style="max-width: 700px; margin: 15px auto 30px; font-size: 1.2rem; color: #ddd; font-weight: 300;">Diseños icónicos y armazones de alta resistencia. Explora los modelos disponibles en nuestra sucursal de Mérida y agenda tu prueba presencial.</p>
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="#rayban-collection" class="btn btn-primary-gold" style="background-color: #ffffff; color: #000000; padding: 14px 35px;">Explorar Colección</a>
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20informaci%C3%B3n%20de%20los%20lentes%20Ray-Ban%20de%20la%20sucursal." target="_blank" class="btn btn-outline-gold" style="padding: 14px 35px; border-color: #ffffff; color: #ffffff;"><i class="fa-brands fa-whatsapp"></i> Contactar Óptica</a>
+            </div>
         </div>
+
+        <a href="#transition-showcase" class="catalog-scroll-indicator">
+            <span>Scroll</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
     </div>
 
-    <!-- Catalog Grid -->
-    <section style="padding: 80px 0;">
+    <!-- Elegant Transition Section -->
+    <section class="catalog-transition" id="transition-showcase">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 40px;">
+            <span class="section-badge" style="color: #888; border-color: #333; margin-bottom: 20px;">MARCAS ORIGINALES</span>
+            <h2>Colecciones Destacadas</h2>
+            <p>Descubre nuestra curación de modelos de alta gama disponibles para graduación. La experiencia de probártelos y recibir asesoría te espera en nuestra sucursal física.</p>
+        </div>
+    </section>
+
+    <!-- Ray-Ban Section -->
+    <section class="editorial-section" id="rayban-collection" style="border-top: 1px solid #111;">
+        <div class="container">
+            <div class="editorial-title-block">
+                <span class="section-badge" style="color: #ffffff; border-color: rgba(255,255,255,0.3);">DISTRIBUIDOR AUTORIZADO</span>
+                <h2>Ray-Ban Legacy</h2>
+                <p>Explora las siluetas que marcaron la historia de la moda y la óptica. Haz clic en tu favorito para agendar tu prueba.</p>
+            </div>
+
+            <!-- Ray-Ban Grid 1 -->
+            <div class="editorial-grid">
                 
-                <!-- Product 1 -->
-                <div class="product-card animate-on-scroll fade-in-up" style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column;">
-                    <div style="background: var(--bg-light); padding: 40px 20px; text-align: center; position: relative;">
-                        <span style="position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">Aviator</span>
-                        <img src="assets/imagenes_catalogo/RayBan/RayBan1.jpeg" alt="Ray-Ban Aviator Classic" style="width: 100%; height: 180px; object-fit: contain; transition: var(--transition);">
-                    </div>
-                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                        <div>
-                            <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 8px;">Ray-Ban Aviator Classic</h3>
-                            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">El diseño icónico que definió las gafas de sol para siempre. Montura metálica dorada y cristales clásicos de alta protección.</p>
+                <!-- Card 1 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20los%20lentes%20Ray-Ban%20Aviator%20en%20sucursal." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Original</span>
+                            <img src="assets/imagenes_catalogo/RayBan/RayBan1.jpeg" alt="Ray-Ban Aviator Classic">
                         </div>
-                        <a href="https://wa.me/525512345678?text=Hola,%20vi%20el%20modelo%20Ray-Ban%20Aviator%20Classic%20en%20el%20cat%C3%A1logo%20de%20Sunglass%20Shop%20%C3%93ptica%20y%20quiero%20consultar%20disponibilidad." target="_blank" class="btn btn-primary-gold" style="display: block; text-align: center; width: 100%;"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad</a>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Aviator Classic</h3>
+                                <p>Silueta clásica metálica dorada</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Product 2 -->
-                <div class="product-card animate-on-scroll fade-in-up" style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column;">
-                    <div style="background: var(--bg-light); padding: 40px 20px; text-align: center; position: relative;">
-                        <span style="position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">Wayfarer</span>
-                        <img src="assets/imagenes_catalogo/RayBan/RayBan2.jpeg" alt="Ray-Ban Wayfarer Original" style="width: 100%; height: 180px; object-fit: contain;">
-                    </div>
-                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                        <div>
-                            <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 8px;">Ray-Ban Wayfarer Original</h3>
-                            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">Un clásico moderno que combina estilo y comodidad inigualables con su marco de acetato negro brillante de alta durabilidad.</p>
+                <!-- Card 2 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20los%20lentes%20Ray-Ban%20Wayfarer%20en%20sucursal." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Original</span>
+                            <img src="assets/imagenes_catalogo/RayBan/RayBan2.jpeg" alt="Ray-Ban Wayfarer Original">
                         </div>
-                        <a href="https://wa.me/525512345678?text=Hola,%20vi%20el%20modelo%20Ray-Ban%20Wayfarer%20Original%20en%20el%20cat%C3%A1logo%20de%20Sunglass%20Shop%20%C3%93ptica%20y%20quiero%20consultar%20disponibilidad." target="_blank" class="btn btn-primary-gold" style="display: block; text-align: center; width: 100%;"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad</a>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Wayfarer Original</h3>
+                                <p>Marco de acetato negro brillante</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Product 3 -->
-                <div class="product-card animate-on-scroll fade-in-up" style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column;">
-                    <div style="background: var(--bg-light); padding: 40px 20px; text-align: center; position: relative;">
-                        <span style="position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">Clubmaster</span>
-                        <img src="assets/imagenes_catalogo/RayBan/RayBan3.jpeg" alt="Ray-Ban Clubmaster Retro" style="width: 100%; height: 180px; object-fit: contain;">
-                    </div>
-                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                        <div>
-                            <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 8px;">Ray-Ban Clubmaster Retro</h3>
-                            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">Inspirado en el estilo retro-intelectual de los años 50, con detalles metálicos elegantes perfectos para destacar tu personalidad.</p>
+                <!-- Card 3 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20los%20lentes%20Ray-Ban%20Clubmaster%20en%20sucursal." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Original</span>
+                            <img src="assets/imagenes_catalogo/RayBan/RayBan3.jpeg" alt="Ray-Ban Clubmaster Retro">
                         </div>
-                        <a href="https://wa.me/525512345678?text=Hola,%20vi%20el%20modelo%20Ray-Ban%20Clubmaster%20Retro%20en%20el%20cat%C3%A1logo%20de%20Sunglass%20Shop%20%C3%93ptica%20y%20quiero%20consultar%20disponibilidad." target="_blank" class="btn btn-primary-gold" style="display: block; text-align: center; width: 100%;"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad</a>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="product-card animate-on-scroll fade-in-up" style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column;">
-                    <div style="background: var(--bg-light); padding: 40px 20px; text-align: center; position: relative;">
-                        <span style="position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">Erika</span>
-                        <img src="assets/imagenes_catalogo/RayBan/RayBan4.jpeg" alt="Ray-Ban Erika Chic" style="width: 100%; height: 180px; object-fit: contain;">
-                    </div>
-                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                        <div>
-                            <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 8px;">Ray-Ban Erika Chic</h3>
-                            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">Monturas redondas de gran tamaño con patillas metálicas delgadas que aportan un aire sumamente fresco, sofisticado y juvenil.</p>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Clubmaster Retro</h3>
+                                <p>Inspiración intelectual años 50</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
-                        <a href="https://wa.me/525512345678?text=Hola,%20vi%20el%20modelo%20Ray-Ban%20Erika%20Chic%20en%20el%20cat%C3%A1logo%20de%20Sunglass%20Shop%20%C3%93ptica%20y%20quiero%20consultar%20disponibilidad." target="_blank" class="btn btn-primary-gold" style="display: block; text-align: center; width: 100%;"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad</a>
                     </div>
-                </div>
-
-                <!-- Product 5 -->
-                <div class="product-card animate-on-scroll fade-in-up" style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column;">
-                    <div style="background: var(--bg-light); padding: 40px 20px; text-align: center; position: relative;">
-                        <span style="position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">Justin</span>
-                        <img src="assets/imagenes_catalogo/RayBan/Rayban5.jpeg" alt="Ray-Ban Justin Sport" style="width: 100%; height: 180px; object-fit: contain;">
-                    </div>
-                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                        <div>
-                            <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 8px;">Ray-Ban Justin Sport</h3>
-                            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">Inspirado en los Wayfarer pero rediseñado con cristales rectangulares más grandes y un cómodo acabado de goma antideslizante.</p>
-                        </div>
-                        <a href="https://wa.me/525512345678?text=Hola,%20vi%20el%20modelo%20Ray-Ban%20Justin%20Sport%20en%20el%20cat%C3%A1logo%20de%20Sunglass%20Shop%20%C3%93ptica%20y%20quiero%20consultar%20disponibilidad." target="_blank" class="btn btn-primary-gold" style="display: block; text-align: center; width: 100%;"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad</a>
-                    </div>
-                </div>
-
-                <!-- Product 6 -->
-                <div class="product-card animate-on-scroll fade-in-up" style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column;">
-                    <div style="background: var(--bg-light); padding: 40px 20px; text-align: center; position: relative;">
-                        <span style="position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">Round</span>
-                        <img src="assets/imagenes_catalogo/RayBan/RayBan6.jpeg" alt="Ray-Ban Round Metal" style="width: 100%; height: 180px; object-fit: contain;">
-                    </div>
-                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                        <div>
-                            <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 8px;">Ray-Ban Round Metal</h3>
-                            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">Totalmente retro. Un modelo unisex redondo con montura de metal y cristales icónicos de alta resistencia a impactos.</p>
-                        </div>
-                        <a href="https://wa.me/525512345678?text=Hola,%20vi%20el%20modelo%20Ray-Ban%20Round%20Metal%20en%20el%20cat%C3%A1logo%20de%20Sunglass%20Shop%20%C3%93ptica%20y%20quiero%20consultar%20disponibilidad." target="_blank" class="btn btn-primary-gold" style="display: block; text-align: center; width: 100%;"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad</a>
-                    </div>
-                </div>
-
-                <!-- Product 7 -->
-                <div class="product-card animate-on-scroll fade-in-up" style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column;">
-                    <div style="background: var(--bg-light); padding: 40px 20px; text-align: center; position: relative;">
-                        <span style="position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">Hexagonal</span>
-                        <img src="assets/imagenes_catalogo/RayBan/RayBan7.jpeg" alt="Ray-Ban Hexagonal Flat" style="width: 100%; height: 180px; object-fit: contain;">
-                    </div>
-                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                        <div>
-                            <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 8px;">Ray-Ban Hexagonal Flat</h3>
-                            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">La evolución de la forma redonda con montura fina de metal y lentes planos de cristal mineral que ofrecen nitidez óptica óptima.</p>
-                        </div>
-                        <a href="https://wa.me/525512345678?text=Hola,%20vi%20el%20modelo%20Ray-Ban%20Hexagonal%20Flat%20en%20el%20cat%C3%A1logo%20de%20Sunglass%20Shop%20%C3%93ptica%20y%20quiero%20consultar%20disponibilidad." target="_blank" class="btn btn-primary-gold" style="display: block; text-align: center; width: 100%;"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad</a>
-                    </div>
-                </div>
-
-                <!-- Product 8 -->
-                <div class="product-card animate-on-scroll fade-in-up" style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column;">
-                    <div style="background: var(--bg-light); padding: 40px 20px; text-align: center; position: relative;">
-                        <span style="position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">Meteor</span>
-                        <img src="assets/imagenes_catalogo/RayBan/RayBan8.jpeg" alt="Ray-Ban Meteor Retro" style="width: 100%; height: 180px; object-fit: contain;">
-                    </div>
-                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                        <div>
-                            <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 8px;">Ray-Ban Meteor Retro</h3>
-                            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">Un modelo con una fuerte personalidad inspirado en los años 60, tallado en acetato premium con una estética llamativa.</p>
-                        </div>
-                        <a href="https://wa.me/525512345678?text=Hola,%20vi%20el%20modelo%20Ray-Ban%20Meteor%20Retro%20en%20el%20cat%C3%A1logo%20de%20Sunglass%20Shop%20%C3%93ptica%20y%20quiero%20consultar%20disponibilidad." target="_blank" class="btn btn-primary-gold" style="display: block; text-align: center; width: 100%;"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad</a>
-                    </div>
-                </div>
-
-                <!-- Product 9 -->
-                <div class="product-card animate-on-scroll fade-in-up" style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column;">
-                    <div style="background: var(--bg-light); padding: 40px 20px; text-align: center; position: relative;">
-                        <span style="position: absolute; top: 15px; left: 15px; background: #000; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">State Street</span>
-                        <img src="assets/imagenes_catalogo/RayBan/RayBan9.jpeg" alt="Ray-Ban State Street" style="width: 100%; height: 180px; object-fit: contain;">
-                    </div>
-                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                        <div>
-                            <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 8px;">Ray-Ban State Street</h3>
-                            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">Estilo contemporáneo con ángulos marcados y una montura de acetato elegante de alta resistencia que impone presencia.</p>
-                        </div>
-                        <a href="https://wa.me/525512345678?text=Hola,%20vi%20el%20modelo%20Ray-Ban%20State%20Street%20en%20el%20cat%C3%A1logo%20de%20Sunglass%20Shop%20%C3%93ptica%20y%20quiero%20consultar%20disponibilidad." target="_blank" class="btn btn-primary-gold" style="display: block; text-align: center; width: 100%;"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad</a>
-                    </div>
-                </div>
+                </a>
 
             </div>
         </div>
     </section>
 
+    <!-- Intercalated Video Showcase 1 -->
+    <section class="video-showcase-section">
+        <video autoplay muted loop playsinline class="video-showcase-bg">
+            <source src="assets/imagenes_catalogo/RayBan/RayBanVid2.mp4" type="video/mp4">
+        </video>
+        <div class="video-showcase-overlay"></div>
+        <div class="video-showcase-content">
+            <div class="video-showcase-play-btn"><i class="fa-solid fa-play"></i></div>
+            <h3>Innovación en el Aire</h3>
+            <p>Descubre el proceso de diseño y la calidad incomparable de las lentes Ray-Ban Aviator, creadas originalmente para proteger a los pilotos.</p>
+        </div>
+    </section>
+
+    <!-- Ray-Ban Section 2 -->
+    <section class="editorial-section" style="padding-top: 50px;">
+        <div class="container">
+            <div class="editorial-grid">
+                
+                <!-- Card 4 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20los%20lentes%20Ray-Ban%20Erika%20en%20sucursal." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Tendencia</span>
+                            <img src="assets/imagenes_catalogo/RayBan/RayBan4.jpeg" alt="Ray-Ban Erika Chic">
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Erika Chic</h3>
+                                <p>Silueta redonda oversized patilla fina</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20los%20lentes%20Ray-Ban%20Justin%20en%20sucursal." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Moderno</span>
+                            <img src="assets/imagenes_catalogo/RayBan/Rayban5.jpeg" alt="Ray-Ban Justin Sport">
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Justin Sport</h3>
+                                <p>Acabado engomado y lentes rectangulares</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20los%20lentes%20Ray-Ban%20Round%20en%20sucursal." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Retro</span>
+                            <img src="assets/imagenes_catalogo/RayBan/RayBan6.jpeg" alt="Ray-Ban Round Metal">
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Round Metal</h3>
+                                <p>Modelo circular unisex minimalista</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Intercalated Video Showcase 2 -->
+    <section class="video-showcase-section">
+        <video autoplay muted loop playsinline class="video-showcase-bg">
+            <source src="assets/imagenes_catalogo/RayBan/RayBanVid3.mp4" type="video/mp4">
+        </video>
+        <div class="video-showcase-overlay"></div>
+        <div class="video-showcase-content">
+            <div class="video-showcase-play-btn"><i class="fa-solid fa-play"></i></div>
+            <h3>Autenticidad sin Límites</h3>
+            <p>El estilo urbano e inconfundible de Ray-Ban en movimiento. Diseñados para durar, destacar y proteger tu salud visual.</p>
+        </div>
+    </section>
+
+    <!-- Ray-Ban Section 3 -->
+    <section class="editorial-section" style="padding-top: 50px;">
+        <div class="container">
+            <div class="editorial-grid">
+                
+                <!-- Card 7 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20los%20lentes%20Ray-Ban%20Hexagonal%20en%20sucursal." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Diseño</span>
+                            <img src="assets/imagenes_catalogo/RayBan/RayBan7.jpeg" alt="Ray-Ban Hexagonal Flat">
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Hexagonal Flat</h3>
+                                <p>Evolución de la forma redonda con perfil plano</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 8 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20los%20lentes%20Ray-Ban%20Meteor%20en%20sucursal." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Diseño</span>
+                            <img src="assets/imagenes_catalogo/RayBan/RayBan8.jpeg" alt="Ray-Ban Meteor Retro">
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Meteor Retro</h3>
+                                <p>Carácter sesentero en acetato premium</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 9 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20los%20lentes%20Ray-Ban%20State%20Street%20en%20sucursal." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Nuevo</span>
+                            <img src="assets/imagenes_catalogo/RayBan/RayBan9.jpeg" alt="Ray-Ban State Street">
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>State Street</h3>
+                                <p>Elegancia contemporánea de ángulos marcados</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Ray-Ban Conversion Block -->
+    <section class="catalog-conversion">
+        <div class="container" style="max-width: 700px;">
+            <h3 style="font-size: 2rem; margin-bottom: 15px; font-weight: 500;">¿No encontraste el modelo Ray-Ban que buscas?</h3>
+            <p style="color: #888; font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px; font-weight: 300;">Tenemos muchos más modelos en nuestra sucursal. Escríbenos por WhatsApp y te ayudamos a encontrar tu armazón ideal o agendamos tu visita presencial.</p>
+            <a href="https://wa.me/525512345678?text=Hola,%20busco%20un%20modelo%20Ray-Ban%20espec%C3%ADfico%20que%20no%20vi%20en%20el%20cat%C3%A1logo." target="_blank" class="btn btn-primary-gold" style="background-color: #ffffff; color: #000000; padding: 14px 40px;"><i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Vogue Eyewear Section (Light Theme) -->
+    <section class="editorial-section light-theme" id="vogue-collection" style="background-color: #ffffff; color: #000000;">
+        <div class="container">
+            <div class="editorial-title-block">
+                <span class="section-badge" style="color: #000000; border-color: rgba(0,0,0,0.3);">TENDENCIA Y ESTILO</span>
+                <h2>Vogue Eyewear</h2>
+                <p>Diseño contemporáneo y siluetas chic. Descubre la pasarela digital y encuentra la combinación perfecta para tu estilo diario.</p>
+            </div>
+
+            <!-- Vogue Opening Video Campaign -->
+            <div style="position: relative; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 70px; height: 50vh; background-color: #f0f0f0;">
+                <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="assets/imagenes_catalogo/Vogue/VogueVid4.mp4" type="video/mp4">
+                </video>
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);"></div>
+                <div style="position: absolute; bottom: 30px; left: 30px; color: #ffffff; max-width: 500px;">
+                    <h3 style="font-size: 1.8rem; font-weight: 600; margin-bottom: 10px;">Vogue Editorial Runway</h3>
+                    <p style="font-size: 0.95rem; color: #ddd; font-weight: 300;">Colecciones frescas y vibrantes adaptadas para graduación oftálmica o protección solar diaria.</p>
+                </div>
+            </div>
+
+            <!-- Vogue Video Grid Showroom -->
+            <div class="editorial-grid">
+
+                <!-- Vogue Card 1 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20vi%20la%20colecci%C3%B3n%20Vogue%20Runway%20Classic%20y%20quiero%20agendar%20una%20cita%20presencial." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Chic</span>
+                            <video autoplay muted loop playsinline>
+                                <source src="assets/imagenes_catalogo/Vogue/VogueVid1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Vogue Classic</h3>
+                                <p>Marcos elegantes y atemporales</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Vogue Card 2 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20vi%20la%20colecci%C3%B3n%20Vogue%20Glamour%20y%20quiero%20agendar%20una%20cita%20presencial." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Glamour</span>
+                            <video autoplay muted loop playsinline>
+                                <source src="assets/imagenes_catalogo/Vogue/VogueVid2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Vogue Glamour</h3>
+                                <p>Siluetas contemporáneas para destacar</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Vogue Card 3 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20vi%20la%20colecci%C3%B3n%20Vogue%20Moda%20Cat-Eye%20y%20quiero%20agendar%20una%20cita%20presencial." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Tendencia</span>
+                            <video autoplay muted loop playsinline>
+                                <source src="assets/imagenes_catalogo/Vogue/VogueVid3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Vogue Cat-Eye</h3>
+                                <p>Formas retro-chics con colores vibrantes</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Vogue Card 4 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20vi%20la%20colecci%C3%B3n%20Vogue%20Urban%20Style%20y%20quiero%20agendar%20una%20cita%20presencial." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Urbano</span>
+                            <video autoplay muted loop playsinline>
+                                <source src="assets/imagenes_catalogo/Vogue/VogueVid6.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Vogue Urban</h3>
+                                <p>Estilo moderno para la vida citadina</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Vogue Card 5 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20vi%20la%20colecci%C3%B3n%20Vogue%20Metal%20Chic%20y%20quiero%20agendar%20una%20cita%20presencial." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Premium</span>
+                            <video autoplay muted loop playsinline>
+                                <source src="assets/imagenes_catalogo/Vogue/VogueVid8.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Vogue Metal Chic</h3>
+                                <p>Monturas finas con acabados metálicos</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Vogue Card 6 -->
+                <a href="https://wa.me/525512345678?text=Hola,%20vi%20la%20colecci%C3%B3n%20Vogue%20Summer%20Trend%20y%20quiero%20agendar%20una%20cita%20presencial." target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="editorial-card animate-on-scroll fade-in-up">
+                        <div class="editorial-card-media">
+                            <span class="editorial-card-badge">Verano</span>
+                            <video autoplay muted loop playsinline>
+                                <source src="assets/imagenes_catalogo/Vogue/VogueVid9.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="editorial-card-info">
+                            <div>
+                                <h3>Vogue Summer</h3>
+                                <p>Lentes de sol ideales para proteger tu mirada</p>
+                            </div>
+                            <button class="btn-arrow" aria-label="Consultar por WhatsApp"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Vogue Conversion Block -->
+    <section class="catalog-conversion light-theme">
+        <div class="container" style="max-width: 700px;">
+            <h3 style="font-size: 2rem; margin-bottom: 15px; font-weight: 500;">Explora Vogue Eyewear en Persona</h3>
+            <p style="color: #555; font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px; font-weight: 300;">Visita nuestra óptica en Mérida y prueba toda la colección Vogue Eyewear con la asesoría de nuestros profesionales. El armazón que mejor enmarca tu rostro te está esperando.</p>
+            <a href="https://wa.me/525512345678?text=Hola,%20quiero%20agendar%20una%20visita%20para%20probarme%20lentes%20Vogue%20en%20sucursal." target="_blank" class="btn btn-primary-gold" style="background-color: #000000; color: #ffffff; padding: 14px 40px;"><i class="fa-solid fa-calendar-check"></i> Agenda tu Cita Presencial</a>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
+        <div class="container footer-container" style="padding-top: 40px; padding-bottom: 40px;">
             <div class="footer-brand">
                 <a href="index.html" class="logo">
-                    <img src="assets/image.png" alt="SUNGLASS SHOP" class="logo-img">
+                    <img src="assets/logo_sunglasses.svg" alt="SUNGLASS SHOP" class="logo-img">
                 </a>
-                <p>Autoridad, calidad y asesoría experta en salud visual. Más de 11 años de experiencia.</p>
+                <p style="margin-top: 15px; font-weight: 300;">Autoridad, calidad y asesoría experta en salud visual. Más de 11 años de experiencia cuidando tu mirada.</p>
             </div>
             <div class="footer-links">
                 <h4>Menú</h4>
@@ -212,13 +459,13 @@
             </div>
             <div class="footer-contact">
                 <h4>Contacto</h4>
-                <p><i class="fa-solid fa-location-dot"></i> Plaza Dorada, Calle 50 no. 143 loc 64, C. 19, 97220 Mérida, Yuc.</p>
-                <p><i class="fa-solid fa-clock"></i> Lun a Dom: 10:00 AM - 8:00 PM</p>
-                <p><i class="fa-brands fa-whatsapp"></i> +52 55 1234 5678</p>
-                <p><i class="fa-solid fa-envelope"></i> asesoria@sunglassshop.com</p>
+                <p><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> Plaza Dorada, Calle 50 no. 143 loc 64, C. 19, 97220 Mérida, Yuc.</p>
+                <p><i class="fa-solid fa-clock" style="margin-right: 8px;"></i> Lun a Dom: 10:00 AM - 8:00 PM</p>
+                <p><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> +52 55 1234 5678</p>
+                <p><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> asesoria@sunglassshop.com</p>
             </div>
         </div>
-        <div class="footer-bottom text-center">
+        <div class="footer-bottom text-center" style="padding: 20px 0; border-top: 1px solid #111;">
             <p>&copy; 2026 SUNGLASS SHOP. Todos los derechos reservados.</p>
         </div>
     </footer>

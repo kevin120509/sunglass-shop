@@ -1,460 +1,482 @@
-Contexto y Rol
+# $P
 
-Actúa como un desarrollador frontend senior especializado en sitios web estáticos, UI/UX, estructura responsive, contenido comercial y optimización básica para campañas digitales.
+# Rediseño de la página Catálogo - Sunglass Shop Óptica
 
-Vas a trabajar sobre un proyecto web existente llamado “Sunglass Shop”, desarrollado con archivos HTML, CSS y JavaScript. El sitio ya tiene varias páginas creadas, pero necesita ajustes finales con base en la retroalimentación del cliente después de presentar la propuesta.
+## Contexto y Rol
 
-El objetivo no es rehacer todo desde cero, sino ajustar el sitio actual para que comunique correctamente que Sunglass Shop no es solo una tienda de lentes de sol, sino una óptica completa con atención personalizada, marcas originales, micas graduadas, lentes solares graduados, mantenimiento, refacciones, beneficios y convenios empresariales.
+Actúa como un diseñador UI/UX Senior, Frontend Senior y Director de Arte especializado en sitios web premium para marcas de lujo (Apple, Ray-Ban, Persol, Vogue Eyewear, Cartier, Gucci Eyewear).
 
-Consulta/Tarea
+NO estás desarrollando un e-commerce.
 
-Actualiza el sitio web actual de Sunglass Shop aplicando los cambios solicitados por el cliente.
+Estás desarrollando un catálogo digital premium cuya finalidad es inspirar al visitante y llevarlo a visitar físicamente la óptica o contactarse por WhatsApp.
 
-El sitio debe dejar de sentirse como una tienda genérica de lentes de sol y debe comunicar mejor el valor real del negocio:
+El sitio pertenece a Sunglass Shop Óptica.
 
-- Óptica completa.
-- Asesoría visual personalizada.
-- Marcas originales.
-- Servicio y mantenimiento.
-- Refacciones.
-- Lentes solares graduados.
-- Beneficios para clientes.
-- Convenios empresariales.
-- Contacto por WhatsApp.
-- Visita física a la sucursal.
+La empresa vende:
 
-No conviertas el sitio en tienda en línea. No agregues carrito de compras, pasarela de pago ni sistema de compra directa. El objetivo es que el usuario conozca los productos, consulte por WhatsApp y visite la sucursal física para probarse los lentes y recibir asesoría.
-
-Especificaciones
-
-Trabaja sobre la estructura actual del proyecto. En la captura compartida se observa que el proyecto tiene archivos como:
-
-- index.html
-- catalogo.html
-- coleccion.html
-- convenios.html
-- experiencia.html
-- marcas.html
-- salud-visual.html
-- beneficios.html
-- script.js
-- styles.css
-
-También se observa una carpeta assets en la raíz del proyecto.
-
-Dentro de la carpeta assets existe una carpeta llamada lentes_imagenes, y dentro de ella hay una carpeta llamada rayban. Esa carpeta contiene las únicas fotos y videos disponibles por ahora. Usa únicamente ese material visual para productos, marcas, catálogo, videos o secciones relacionadas.
-
-Ruta de referencia del material disponible:
-
-assets/lentes_imagenes/rayban/
-
-No inventes imágenes de otras marcas. No uses imágenes externas. No uses productos de marcas que no estén representadas en el material disponible. Por ahora, todo el contenido visual de productos debe enfocarse en Ray-Ban porque es lo único que el cliente compartió.
-
-Cambios principales que debes aplicar
-
-1. Enfoque general del sitio
-
-El sitio debe comunicar que Sunglass Shop es una óptica, no solo una tienda de lentes de sol.
-
-Usa mensajes enfocados en:
-
-- Servicio óptico.
-- Asesoría personalizada.
-- Calidad.
-- Marcas originales.
-- Confianza.
-- Refacciones.
-- Mantenimiento.
-- Lentes solares graduados.
-- Atención presencial.
-
-Evita mensajes centrados en:
-
-- Lentes baratos.
-- Examen gratis.
-- Descuentos exagerados.
-- Venta rápida.
-- Tienda online.
-- Compra directa.
-
-2. Navegación recomendada
-
-Ajusta el menú principal para que sea más claro y comercial.
-
-Usa esta navegación:
-
-Inicio | Catálogo | Servicios | Beneficios | Convenios | Contacto
-
-Si ya existen páginas con nombres diferentes, puedes reutilizarlas o redirigir su contenido, pero la navegación visible para el usuario debe quedar clara y simple.
-
-La sección de Salud Visual puede integrarse dentro de Servicios para no hacer el menú demasiado largo.
-
-3. Home / Inicio
-
-Actualizar la página de inicio para que desde el primer bloque se entienda que es una óptica completa.
-
-El Hero debe comunicar:
-
-Título sugerido:
-Sunglass Shop Óptica
-
-Subtítulo sugerido:
-Más que lentes de sol: asesoría óptica, armazones originales, micas graduadas, refacciones y mantenimiento especializado.
-
-Botones principales:
-
-- Contáctanos por WhatsApp
-- Ver catálogo
-
-Debajo del Hero agregar beneficios rápidos:
-
+- Lentes graduados
+- Lentes solares
+- Armazones
+- Micas
+- Refacciones
+- Mantenimiento
 - Marcas originales
-- Asesoría personalizada
-- Garantía real
-- Facilidades de pago
-- Mantenimiento especializado
 
-El diseño debe mantenerse limpio, moderno, blanco y negro, alineado con la identidad visual del logo.
+El cliente dejó muy claro que NO quiere competir por precio.
 
-4. Catálogo
+Quiere transmitir:
 
-Actualizar el catálogo para que funcione como catálogo visual, no como tienda online.
+• Calidad
+• Servicio
+• Experiencia
+• Marcas originales
+• Atención personalizada
 
-El catálogo debe:
+El catálogo debe sentirse elegante, moderno y exclusivo.
 
-- Mostrar fotos reales tomadas de assets/lentes_imagenes/rayban/
-- Usar contenido visual Ray-Ban únicamente.
-- No mostrar precios como elemento principal.
-- No usar botón “Comprar”.
-- Usar botón “Consultar por WhatsApp”.
-- Mostrar textos breves.
-- Usar animaciones suaves en cards.
-- Permitir que el usuario vea modelos o referencias visuales y se interese en visitar la óptica.
+---
 
-Cada producto o card debe tener:
+## Contexto del material disponible
 
-- Imagen o video disponible.
-- Marca: Ray-Ban.
-- Texto breve.
-- Botón para consultar disponibilidad por WhatsApp.
+NO contamos con fotografías individuales de todos los modelos.
 
-Mensaje sugerido para WhatsApp desde catálogo:
-Hola, vi un modelo Ray-Ban en el catálogo de Sunglass Shop Óptica y quiero consultar disponibilidad.
+Actualmente solamente existe material oficial proporcionado por las marcas.
 
-5. Servicios
+En la carpeta:
 
-Crear o actualizar la página de servicios para que agrupe lo que realmente ofrece la óptica.
+assets/lentes_imagenes/
 
-Debe incluir estos servicios:
+existen carpetas como:
 
-- Examen visual.
-- Micas graduadas.
-- Lentes solares graduados.
-- Refacciones.
-- Mantenimiento.
-- Salud visual.
-- Asesoría personalizada.
+RayBan/
 
-Cada servicio debe presentarse en cards limpias, con texto breve de máximo 3 a 5 líneas.
+Vogue/
 
-No usar textos largos. El cliente pidió que la información sea breve, clara y visual.
+Dentro de ellas existen:
 
-6. Refacciones y reparación óptica
+• Portadas oficiales
+• Videos promocionales
+• Fotografías promocionales
 
-Agregar una sección fuerte de refacciones y reparación, porque este es uno de los diferenciadores reales del cliente.
+NO inventes imágenes.
 
-Título sugerido:
-Refacciones y reparación óptica
+NO uses imágenes externas.
 
-Texto sugerido:
-Ofrecemos mantenimiento, ajuste y reparación para armazones seleccionados. Podemos apoyar con cambio de plaquetas, varillas, terminales, cristales y adaptaciones especiales según el modelo.
+Todo el diseño debe construirse utilizando únicamente ese material.
 
-Agregar nota:
-Servicio sujeto a modelo, marca y disponibilidad de piezas.
+---
 
-Servicios dentro de esta sección:
+## Objetivo
 
-- Cambio de plaquetas.
-- Varillas y terminales.
-- Cristales y micas.
-- Ajuste y mantenimiento.
-- Trabajos especiales.
+Rediseñar completamente la página del catálogo.
 
-No prometas que se reparan todos los modelos ni todas las marcas.
+La página ya funciona.
 
-7. Lentes solares graduados
+NO modificar su funcionamiento.
 
-Agregar una sección sobre lentes solares graduados.
+Únicamente mejorar completamente:
 
-Título sugerido:
-Lentes solares con graduación
+- diseño
+- experiencia
+- distribución
+- jerarquía visual
+- impacto visual
 
-Texto sugerido:
-Disfruta la protección de unos lentes solares con la graduación que necesitas. Ideales para manejar, viajar, ir a la playa o realizar actividades al aire libre sin dejar de cuidar tu visión.
+Debe parecer el sitio oficial de un distribuidor premium.
 
-Cards sugeridas:
+No una tienda de productos.
 
-- Solares graduados.
-- Micas fotosensibles.
-- Colores especiales.
-- Visión cómoda para ciudad, playa o manejo.
+---
 
-8. Beneficios
+## Filosofía del catálogo
 
-Mantener o mejorar la página de beneficios.
+El catálogo NO debe parecer Mercado Libre.
 
-Debe comunicar:
+NO debe parecer Amazon.
 
-- Garantía.
-- Mantenimiento.
-- Facilidades de pago.
-- Atención personalizada.
-- Servicio posterior a la compra.
+NO debe parecer una tienda online.
 
-El texto debe ser breve y claro.
+Debe sentirse como:
 
-No usar lenguaje de descuento agresivo. El cliente no quiere parecer una óptica de precios bajos.
+• Ray-Ban
+• Vogue Eyewear
+• Apple
+• Nike
 
-9. Convenios
+Donde el usuario primero disfruta la experiencia visual.
 
-Reforzar la página de convenios.
+Después descubre las colecciones.
 
-El cliente tiene interés en convenios empresariales y actualmente tiene una relación importante con CFE. No mencionar CFE como caso público si no está confirmado que se puede usar como referencia comercial.
+Y finalmente agenda una visita.
 
-Título sugerido:
-Convenios ópticos para empresas
+---
 
-Texto sugerido:
-Apoyamos a empresas que buscan ofrecer beneficios visuales a sus colaboradores mediante atención personalizada, productos de calidad y seguimiento profesional.
+## Hero
 
-Agregar formulario o bloque de contacto para empresas.
+El hero debe convertirse en el protagonista.
 
-Campos sugeridos:
+Actualmente el video se aprecia demasiado pequeño.
 
-- Nombre completo.
-- Empresa.
-- Cargo.
-- Número aproximado de empleados.
-- Teléfono / WhatsApp.
-- Correo.
-- Mensaje.
+Modificarlo para que:
 
-El formulario puede enviar la información por WhatsApp, no necesita backend.
+- ocupe prácticamente toda la pantalla
 
-Mensaje sugerido:
-Hola, quiero información sobre convenios ópticos para mi empresa. Mi nombre es **_, empresa _**, número aproximado de empleados \_\_\_.
+aproximadamente
 
-10. Reseñas y testimonios
+80vh - 90vh
 
-Agregar una sección de testimonios o reseñas.
+Debe verse cinematográfico.
 
-Título sugerido:
-Lo que opinan nuestros clientes
+El video siempre debe cubrir completamente el Hero.
 
-Texto sugerido:
-La confianza también se construye con experiencias reales. Conoce lo que nuestros clientes opinan sobre nuestra atención, servicio y calidad óptica.
+Nunca debe verse pequeño.
 
-Si no hay reseñas reales todavía, usar textos genéricos temporales claramente reemplazables, sin inventar nombres completos ni testimonios demasiado específicos.
+Debe mantener la relación de aspecto.
 
-11. Salud visual
+Si es necesario usar object-fit: cover.
 
-La información de salud visual debe mantenerse, pero resumida.
+Agregar un overlay oscuro muy ligero.
 
-Evita afirmaciones médicas absolutas como:
+El texto debe permanecer perfectamente legible.
 
-- Bloquea el 100% de la luz azul.
-- Elimina todos los síntomas.
-- Corrige tu visión automáticamente.
+Debe contener:
 
-Usa frases más seguras:
+Badge
 
-- Ayuda a reducir molestias visuales según el tratamiento elegido.
-- Puede mejorar la comodidad visual en actividades específicas.
-- La recomendación final depende de la valoración óptica.
+CATÁLOGO EXCLUSIVO
 
-12. WhatsApp
+Título
 
-Todos los botones importantes deben llevar a WhatsApp.
+COLECCIÓN RAY-BAN
 
-Crear mensajes distintos según la sección para poder identificar de dónde viene el cliente.
+Descripción breve.
 
-Mensajes sugeridos:
+Dos botones
 
-Catálogo:
-Hola, vi el catálogo de Sunglass Shop Óptica y quiero consultar disponibilidad.
+Ver colección
 
-Servicios:
-Hola, quiero información sobre los servicios ópticos de Sunglass Shop.
+WhatsApp
 
-Refacciones:
-Hola, quiero información sobre refacciones o reparación de lentes.
+Agregar un indicador visual para hacer scroll.
 
-Beneficios:
-Hola, vi los beneficios de Sunglass Shop Óptica y quiero más información.
+---
 
-Convenios:
-Hola, quiero información sobre convenios ópticos para empresas.
+## Transición
 
-Contacto:
-Hola, quiero información de Sunglass Shop Óptica.
+Después del Hero NO comenzar inmediatamente con las cards.
 
-13. Identidad visual
+Agregar una transición elegante.
 
-Mantener una identidad visual minimalista en blanco y negro.
+Ejemplo:
 
-Usar:
+Colecciones destacadas
 
-- Fondo blanco.
-- Fondo negro en secciones premium o hero.
-- Texto negro sobre fondo claro.
-- Texto blanco sobre fondo oscuro.
-- Grises suaves para divisores y fondos secundarios.
-- Bordes limpios.
-- Cards modernas.
-- Tipografía sans serif estilo Montserrat, Inter o similar.
+Explora las marcas originales disponibles en nuestra sucursal.
 
-No usar dorado por ahora, ya que se ha trabajado una versión visual en blanco y negro.
+↓
 
-14. Animaciones
+Scroll
 
-Agregar animaciones suaves, no exageradas.
+↓
 
-Permitido:
+Colecciones
 
-- Hover en cards.
-- Zoom ligero en imágenes.
-- Fade-up al aparecer secciones.
-- Transiciones suaves en botones.
-- Cambio de sombra al pasar el mouse.
+---
 
-Evitar:
+## Catálogo
 
-- Animaciones pesadas.
-- Efectos 3D avanzados.
-- Movimiento excesivo.
-- Elementos que ralenticen la página.
+Eliminar el concepto tradicional de cards de producto.
 
-15. Contenido visual
+Cambiarlo por un catálogo editorial.
 
-Usar únicamente el material disponible en:
+Cada portada oficial representa una colección.
 
-assets/lentes_imagenes/rayban/
+Ejemplo
 
-Ese material puede usarse para:
+Aviator
 
-- Catálogo.
-- Hero.
-- Cards de productos.
-- Secciones visuales.
-- Videos cortos.
-- Contenido de marca.
+Wayfarer
 
-Si falta material para alguna sección, usar placeholders discretos o bloques visuales simples, pero no usar imágenes externas ni inventar fotos de otras marcas.
+Clubmaster
 
-16. SEO básico
+Round
 
-Agregar o mejorar:
+etc.
 
-- Títulos de página.
-- Meta description.
-- Textos alternativos en imágenes.
-- Nombres descriptivos en imágenes cuando sea posible.
-- Enlaces claros.
-- Botones con texto entendible.
-- Contenido local orientado a óptica.
+Cada portada debe ser grande.
 
-Palabras clave sugeridas:
+Debe ocupar mucho más espacio visual.
 
-- Óptica en Mérida.
-- Lentes Ray-Ban en Mérida.
-- Lentes solares graduados.
-- Refacciones Ray-Ban.
-- Examen visual.
-- Micas graduadas.
-- Convenios ópticos para empresas.
-- Mantenimiento de lentes.
+Las imágenes deben tener exactamente el mismo tamaño.
 
-17. Responsive
+La misma proporción.
 
-El sitio debe verse correctamente en:
+Los mismos bordes.
 
-- Celular.
-- Tablet.
-- Escritorio.
+La misma altura.
 
-En móvil:
+No permitir que cada imagen tenga una altura distinta.
 
-- El menú debe ser fácil de usar.
-- Las cards deben apilarse.
-- Los botones deben ser grandes.
-- Las imágenes no deben deformarse.
-- El texto debe ser legible.
-- El WhatsApp debe estar visible.
+---
 
-18. Mantener estructura existente
+## Videos
 
-No elimines páginas importantes sin necesidad.
+Intercalar videos entre colecciones.
 
-Puedes reorganizar contenido, pero respeta la estructura base del proyecto actual.
+Ejemplo
 
-Archivos existentes importantes:
+Hero
 
-- index.html
-- catalogo.html
-- coleccion.html
-- convenios.html
-- experiencia.html
-- marcas.html
-- salud-visual.html
-- beneficios.html
-- script.js
-- styles.css
+↓
 
-Si decides integrar salud-visual.html dentro de servicios.html, conserva el contenido útil o enlázalo de forma coherente.
+Colecciones RayBan
 
-19. Criterios de calidad
+↓
 
-El resultado debe cumplir con:
+Video oficial
 
-- Diseño limpio.
-- Mensaje claro.
-- Enfoque en óptica, no solo lentes de sol.
-- Contenido breve.
-- Navegación simple.
-- Uso correcto de fotos y videos Ray-Ban.
-- Botones visibles de WhatsApp.
-- Sin tienda online.
-- Sin carrito.
-- Sin precios como prioridad.
-- Sin promesas médicas exageradas.
-- Sin imágenes externas.
-- Responsive.
-- Fácil de mantener.
+↓
 
-20. Resultado esperado
+Más colecciones
 
-Entrega una versión actualizada del sitio web Sunglass Shop Óptica, lista para presentar al cliente como una versión más cercana a lo que solicitó en la reunión.
+↓
 
-El sitio debe verse profesional, confiable y funcional, con enfoque en servicio óptico, productos originales, atención personalizada y conversión a WhatsApp o visita física.
+Video
 
-Verificación
+↓
 
-Antes de finalizar, revisa que se cumpla lo siguiente:
+Nueva marca
 
-- El sitio comunica claramente que es una óptica.
-- El menú quedó como: Inicio, Catálogo, Servicios, Beneficios, Convenios, Contacto.
-- El catálogo usa únicamente imágenes o videos de assets/lentes_imagenes/rayban/.
-- No hay carrito de compras.
-- No hay pasarela de pago.
-- No se promocionan lentes baratos.
-- No se usan descuentos agresivos.
-- Los textos son breves.
-- Las secciones tienen buena jerarquía visual.
-- Los botones de WhatsApp funcionan.
-- Los mensajes de WhatsApp cambian según la sección.
-- La página de convenios tiene formulario o llamada directa a WhatsApp.
-- Se agregó sección de refacciones.
-- Se agregó sección de lentes solares graduados.
-- Se agregó o dejó preparada la sección de reseñas.
-- El sitio funciona bien en móvil.
-- No se usaron imágenes externas ni de otras marcas.
+↓
+
+Video Vogue
+
+↓
+
+Colecciones Vogue
+
+↓
+
+Contacto
+
+El usuario nunca debe sentir que solamente baja viendo tarjetas.
+
+Debe existir dinamismo.
+
+---
+
+## Nueva sección
+
+Agregar una nueva sección dedicada a
+
+Vogue Eyewear.
+
+Esta sección debe sentirse diferente a RayBan.
+
+Puede utilizar un fondo claro.
+
+Debe iniciar con un video promocional.
+
+Después mostrar las portadas.
+
+No mezclar ambas marcas.
+
+Cada marca debe sentirse independiente.
+
+---
+
+## Cards
+
+Las cards ya no deben verse como productos.
+
+Deben parecer portadas editoriales.
+
+Cada card debe contener únicamente:
+
+Portada
+
+Nombre de la colección
+
+Botón
+
+Ver colección
+
+Nada más.
+
+Eliminar exceso de texto.
+
+---
+
+## Hover
+
+Cuando el usuario pase el mouse:
+
+La imagen aumenta ligeramente.
+
+La card se eleva.
+
+Aparece una sombra elegante.
+
+El botón cambia ligeramente.
+
+Todo debe tener transiciones suaves.
+
+Nunca exageradas.
+
+---
+
+## Videos
+
+Los videos deben tener un diseño premium.
+
+No simplemente insertar un video.
+
+Cada video debe verse como una sección completa.
+
+Con:
+
+overlay
+
+botón play
+
+título
+
+breve descripción
+
+---
+
+## Espaciados
+
+Incrementar considerablemente los espacios entre secciones.
+
+El sitio debe respirar.
+
+Debe sentirse premium.
+
+No saturado.
+
+---
+
+## Conversión
+
+Después de terminar RayBan agregar un bloque.
+
+¿No encontraste el modelo que buscas?
+
+Tenemos muchos más disponibles en nuestra sucursal.
+
+Botón
+
+Consultar por WhatsApp.
+
+Después comenzar Vogue.
+
+---
+
+## Footer
+
+Mantener el footer actual.
+
+Pero mejorar visualmente:
+
+espaciados
+
+iconografía
+
+alineación
+
+jerarquía
+
+---
+
+## Responsive
+
+Todo el rediseño debe verse correctamente en:
+
+Desktop
+
+Tablet
+
+Mobile
+
+Las cards deben reorganizarse automáticamente.
+
+Los videos deben seguir ocupando gran parte de la pantalla.
+
+No permitir deformaciones.
+
+---
+
+## Restricciones
+
+NO eliminar funcionalidad.
+
+NO cambiar rutas.
+
+NO cambiar estructura del proyecto.
+
+NO cambiar JavaScript existente.
+
+NO eliminar páginas.
+
+Únicamente mejorar el diseño.
+
+Reutilizar componentes cuando sea posible.
+
+Mantener compatibilidad con el resto del sitio.
+
+---
+
+## Inspiración
+
+Tomar inspiración visual de:
+
+Ray-Ban
+
+Persol
+
+Vogue Eyewear
+
+Apple
+
+Nike
+
+Gentle Monster
+
+Warby Parker
+
+No copiar diseños.
+
+Únicamente tomar como referencia:
+
+espacios
+
+jerarquía
+
+tipografía
+
+animaciones
+
+uso del video
+
+distribución
+
+---
+
+## Resultado esperado
+
+El resultado debe parecer un sitio web premium donde:
+
+el usuario entra,
+
+disfruta la experiencia visual,
+
+explora RayBan,
+
+observa videos,
+
+explora Vogue,
+
+y finalmente agenda una visita presencial mediante WhatsApp.
+
+La sensación general debe ser la de un showroom digital exclusivo y no la de una tienda en línea.
